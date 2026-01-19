@@ -48,6 +48,3 @@ ul li:hover {
   opacity: 0.87;
   filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.29));
 }
-body {
-  min-height: 300vh;
-}
