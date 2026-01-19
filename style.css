@@ -29,3 +29,22 @@ ul li:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
+.engrenagem {
+  position: fixed;
+  right: -60px;          /* metade pra fora da tela */
+  top: 41.5%;
+  transform: translateY(-50%);
+  font-size: 130px;      /* tamanho da engrenagem */
+  opacity: 0.87;         /* efeito moderno */
+  pointer-events: none; /* não atrapalha clique */
+  z-index: 0;
+  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.29));
+}
+
+.engrenagem-pequena {
+  right: -60px;        /* mais pra dentro */
+  top: calc(50% + 39px); /* bem perto da grande */
+  font-size: 108px;     /* menor */
+  opacity: 0.87;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.29));
+}
