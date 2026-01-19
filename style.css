@@ -1,0 +1,31 @@
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo-titulo img {
+  width: 60px;
+  height: auto;
+}
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+ul li {
+  background: linear-gradient(135deg, #ffffff, #e6f0ff);
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
