@@ -31,15 +31,15 @@ ul li:hover {
 }
 .engrenagem {
   position: fixed;
-  right: -50px;
-  top: 50%;
-  transform: translateY(-50%) rotate(0deg);
-  font-size: 200px;
-  opacity: 0.15;
-  pointer-events: none;
+  right: -60px;          /* metade pra fora da tela */
+  top: 41.5%;
+  transform: translateY(-50%);
+  font-size: 130px;      /* tamanho da engrenagem */
+  opacity: 0.87;         /* efeito moderno */
+  pointer-events: none; /* não atrapalha clique */
   z-index: 0;
+  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.29));
 }
-
 
 .engrenagem-pequena {
   right: -60px;        /* mais pra dentro */
