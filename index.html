@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><link rel="stylesheet" href="style.css">
-
+<head>
  <meta name="description" content="JS Motos - Oficina mecânica especializada em motos em Nova Londrina, Ji-Paraná - RO. Troca de óleo, revisão, pneus, manutenção e muito mais.">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,6 +74,26 @@ html, body {
     }
   </style>
 </head>
+<div class="engrenagem">
+  ⚙️
+</div>
+  <div class="engrenagem engrenagem-pequena">⚙️</div>
+
+ <script>
+  const engrenagens = document.querySelectorAll('.engrenagem');
+
+  window.addEventListener('scroll', () => {
+    const scroll = window.scrollY;
+
+    engrenagens[0].style.transform =
+      `translateY(-50%) rotate(${-scroll * 0.3}deg)`;
+
+    engrenagens[1].style.transform =
+      `translateY(-50%) rotate(${scroll * 0.6}deg)`;
+  });
+</script>
+
+
 <body>
 
 <header class="topo">
@@ -175,36 +194,3 @@ html, body {
 
 </body>
 </html>
-<style>
- .logo-titulo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-.logo-titulo img {
-  width: 60px;
-  height: auto;
-}
-ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-}
-
-ul li {
-  background: linear-gradient(135deg, #ffffff, #e6f0ff);
-  padding: 15px;
-  border-radius: 12px;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-ul li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-</style>
